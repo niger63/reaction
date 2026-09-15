@@ -18,7 +18,7 @@ function endTimer(i){
 	
 }
 function onTouchStart(){
-	color = "gray"
+	color = "#777777"
 	
 	setText("hold")
 	
@@ -29,7 +29,7 @@ function onTouchStart(){
 }
 function onTouchEnd(){
 	
-	color = "gray"
+	color = "#999999"
 	
 	n++;
 	let dt = Date.now() - t
