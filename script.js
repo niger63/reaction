@@ -13,13 +13,14 @@ function setText(text){
 function endTimer(i){
 	if(i == n){
 		color = "#00ff00"
+		setText("relase")
 	}
 	
 }
 function onTouchStart(){
+	color = "gray"
 	
-	color = "#ff0000"
-	setText("")
+	setText("hold")
 	
 	n++;
 	let tos = 2000+1000*Math.random()
@@ -33,6 +34,7 @@ function onTouchEnd(){
 	n++;
 	let dt = Date.now() - t
 	if(dt < 0){
+		color = "red"
 		setText("missed")
 		
 	}else{
