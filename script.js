@@ -13,7 +13,7 @@ function setText(text){
 function endTimer(i){
 	if(i == n){
 		color = "#00ff00"
-		setText("relase")
+		setText("release")
 	}
 	
 }
