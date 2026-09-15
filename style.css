@@ -1,0 +1,27 @@
+html, body,.res {
+  touch-action: manipulation;
+}
+
+body{
+	margin:0px;
+}
+.full-screen-canvas{
+	display: block;
+	height:100%;
+	width:100%;
+	touch-action: manipulation;
+}
+.res{
+	pointer-events: none;
+    cursor: default;
+	position: absolute;
+	display: flex;
+	justify-content: center; /* Centers horizontally */
+	align-items: center;     /* Centers vertically */
+	height:100%;
+	width:100%;
+	top: 0px;          /* 3. Distance from the top of the parent */
+	left: 0px;
+	font-size: 10rem; 
+	font-family: monospace;
+}
